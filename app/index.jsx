@@ -14,15 +14,16 @@ const App = () => {
 
                 <Text style={styling.textTitle}>TREE OF LIFE</Text>
                 
-                <Button
+                <Pressable
                 title="START"
+                style={styling.startBtn}
                 onPress={
                     () => {
                         alert("Start the game");
-                        window.location.href = "/about"
                     }
                 }>
-                </Button>
+                    <Text style={styling.aboutBtnChild}>START</Text>
+                </Pressable>
 
                 <Link 
                     href={"/about"}

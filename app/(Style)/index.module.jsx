@@ -33,5 +33,6 @@ export const styling = {
     aboutBtnChild: {
         color: 'white',
         textAlign: 'center',
-    }
+    },
+  
 };
