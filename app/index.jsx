@@ -13,11 +13,28 @@ const App = () => {
                 style={styling.backgroundImage}>
 
                 <Text style={styling.textTitle}>TREE OF LIFE</Text>
+                <Link 
+                    href={"/about"}
+                    style={styling.startBtn}
+                     asChild>
+                    <Pressable>
+                        <Text style={styling.aboutBtnChild}>START</Text>
+                    </Pressable>
+                </Link>
 
                 <Link 
                     href={"/about"}
                     style={styling.aboutBtn}
+                     asChild>
+                    <Pressable>
+                        <Text style={styling.aboutBtnChild}>HELP</Text>
+                    </Pressable>
+                </Link>
+                
 
+                <Link 
+                    href={"/about"}
+                    style={styling.aboutBtn}
                      asChild>
                     <Pressable>
                         <Text style={styling.aboutBtnChild}>ABOUT</Text>
