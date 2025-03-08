@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ImageBackground, Pressable} from "react-native";
+import { View, Text, ImageBackground, Pressable, Button} from "react-native";
 import { Link } from "expo-router"
 import { styling } from "./(Style)/index.module";
 import TREE from "../assets/images/logo.png"; // Remove the curly braces
@@ -13,14 +13,16 @@ const App = () => {
                 style={styling.backgroundImage}>
 
                 <Text style={styling.textTitle}>TREE OF LIFE</Text>
-                <Link 
-                    href={"/about"}
-                    style={styling.startBtn}
-                     asChild>
-                    <Pressable>
-                        <Text style={styling.aboutBtnChild}>START</Text>
-                    </Pressable>
-                </Link>
+                
+                <Button
+                title="START"
+                onPress={
+                    () => {
+                        alert("Start the game");
+                        window.location.href = "/about"
+                    }
+                }>
+                </Button>
 
                 <Link 
                     href={"/about"}
