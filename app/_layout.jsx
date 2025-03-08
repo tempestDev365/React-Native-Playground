@@ -10,6 +10,14 @@ export default function RootLayout() {
             title: "Home",
             headerShown: false
           }} />
+
+      <Stack.Screen
+      name="about"
+      options={{
+        title: "ABOUT"
+      }} />
+  
     </Stack>
   )
 }
+
